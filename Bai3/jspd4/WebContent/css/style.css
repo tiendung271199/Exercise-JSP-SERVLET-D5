@@ -1,0 +1,55 @@
+.wrapper {
+	margin: 50px auto;
+	width: 320px;
+}
+
+.wrapper .title {
+	background-color: #FF336A;
+	height: 50px;
+}
+
+.wrapper .title h1 {
+	text-align: center;
+	color: white;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.wrapper .main {
+	background-color: #FF8FB1;
+	padding-left: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.wrapper .main #form p{
+	margin: 10px 0px;
+}
+
+.wrapper .main #form p .name{
+	width: 100px;
+	float: left;
+}
+
+.wrapper .main #form p input{
+	border-radius: 5px;
+}
+
+.wrapper .main #form p #submit{
+	background-color: #D91A66;
+	color: white;
+	width: 60px;
+	height: 25px;
+}
+
+.wrapper .main #form #input{
+	text-align: center;
+}
+
+.wrapper .main p{
+	margin: 10px 0px;
+}
+
+.wrapper .main p a{
+	text-decoration: none;
+}

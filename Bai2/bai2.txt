@@ -1,0 +1,17 @@
+- Tạo Database quancafe và Table cafe: thực hiện trực tiếp trên localhost/phpmyadmin
+- Khi tạo table cafe thì chọn ID_Cafe làm Primary_Key
+- Insert dữ liệu vào table:
+	INSERT INTO cafe (ThuongHieu,MoTa) VALUES ('Trung Nguyên','Thương hiệu Việt có mặt tại thế giới'),('Phương Vi','Cafe thương đậm, ngon'),
+('Phương Nguyên','Cafe hạt tốt cho sức khoẻ'),('Paris','Cafe chống ngủ khi code'),('Long','Cafe thơm ngon');
+- Liệt kê các thương hiệu cafe:
+	SELECT ThuongHieu FROM cafe    Hoặc    SELECT * FROM cafe
+- Liệt kê các thương hiệu có chứa từ "Phương":
+	SELECT ID_Cafe,ThuongHieu,MoTa FROM cafe WHERE ThuongHieu LIKE '%Phương%'
+- Liệt kê các thương hiệu cafe có ID_Cafe > 2 và ID_Cafe < 4 hoặc có chứa từ "Long":
+	SELECT ID_Cafe,ThuongHieu,MoTa FROM cafe WHERE ID_Cafe > 2 AND ID_Cafe < 4 OR ThuongHieu LIKE '%Long%'
+- Sửa thương hiệu Phương Vi thành Kim Trung:
+	UPDATE cafe SET ThuongHieu = 'Kim Trung' WHERE ThuongHieu = 'Phương Vi'
+- Xoá cafe có ID_Cafe = 3:
+	DELETE FROM cafe WHERE ID_Cafe = 3
+- Đếm xem có bao nhiêu cafe có MoTa chứa "on" hoặc ThuongHieu có chứa "Nguyên":
+	SELECT COUNT(*) FROM cafe WHERE MoTa LIKE BINARY '%on%' OR ThuongHieu LIKE BINARY '%Nguyên%'

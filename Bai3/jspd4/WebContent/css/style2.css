@@ -1,0 +1,27 @@
+.wrapper {
+	margin: 50px auto;
+	width: 485px;
+}
+
+.wrapper .title {
+	background-color: red;
+	height: 50px;
+}
+
+.wrapper .title h1 {
+	color: white;
+	text-align: center;
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+
+.wrapper .main {
+	background-color: yellow;
+	padding: 15px;
+}
+
+.wrapper .main #table {
+	width: 450px;
+	border-color: red;
+	background-color: #FF94FF;
+}
